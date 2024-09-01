@@ -19,3 +19,4 @@ PublicDependencyModuleNames.AddRange(new string[] {
   }, 
 ]
 ```
+- Call the functions directly as I'm using UBlueprintFunctionLibrary for them.
