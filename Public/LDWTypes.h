@@ -3,15 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
-#include "LDWTypes.generated.h"
 
 /**
- * 
+ * Check Condition, if not valid then log a message to Output Log and return, stop logic flow
  */
-UCLASS()
-class LDW_API ULDWTypes : public UObject
-{
-	GENERATED_BODY()
-	
-};
+#define CHECK_LOG_RETURN(Condition, CategoryName, Verbosity, Format, ...) if (!(Condition)) { UE_PRIVATE_LOG(PREPROCESSOR_NOTHING, constexpr, CategoryName, Verbosity, Format, ##__VA_ARGS__); return; }

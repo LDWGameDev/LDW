@@ -29,6 +29,6 @@ public:
 	 * @param	EndVector		End vector to calculate
 	 * @return	Angle between 2 vectors, value range [-180, 180]
 	 */
-	UFUNCTION(BlueprintPure, meta = (WorldContext = "WorldContextObject"), Category = "LDW|Math")
+	UFUNCTION(BlueprintPure, Category = "LDW|Math")
 		static float GetAngleBetween2Vectors_NegPos180(const FVector& StartVector, const FVector& EndVector);
 };
